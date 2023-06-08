@@ -36,8 +36,8 @@ class UserViewModel extends StateNotifier<UserState> {
     state.users.add(
       User(
         id: 1,
-        fname: "Rahul",
-        lname: "Kumar",
+        fname: "Paras",
+        lname: "Ayer",
         moduleMarks: {
           "Flutter": 90,
           "Web Dev": 80,
@@ -49,8 +49,8 @@ class UserViewModel extends StateNotifier<UserState> {
     state.users.add(
       User(
         id: 2,
-        fname: "Aakash",
-        lname: "Faujdar",
+        fname: "Upesh",
+        lname: "Ratala",
         moduleMarks: {
           "Flutter": 90,
           "Web Dev": 80,
