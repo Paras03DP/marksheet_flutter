@@ -31,7 +31,7 @@ class _AdduserState extends ConsumerState<Adduser> {
     var data = ref.watch(userViewModelProvider);
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Add User"),
+        title: const Text("Add User Information"),
       ),
       body: data.isLoading
           ? const Center(child: CircularProgressIndicator())
@@ -46,7 +46,7 @@ class _AdduserState extends ConsumerState<Adduser> {
                     controller: idController,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
-                      labelText: 'ID',
+                      labelText: 'User ID',
                     ),
                   ),
                   const SizedBox(height: 16.0),
@@ -55,7 +55,7 @@ class _AdduserState extends ConsumerState<Adduser> {
                     controller: fNameController,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
-                      labelText: 'FName',
+                      labelText: 'First Name',
                     ),
                   ),
                   const SizedBox(height: 16.0),
@@ -64,7 +64,7 @@ class _AdduserState extends ConsumerState<Adduser> {
                     controller: lNameController,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
-                      labelText: 'LName',
+                      labelText: 'Last Name',
                     ),
                   ),
                   const SizedBox(height: 16.0),
@@ -155,7 +155,7 @@ class _AdduserState extends ConsumerState<Adduser> {
                     controller: search,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
-                      labelText: 'Search',
+                      labelText: 'Please Search by your name',
                     ),
                   ),
                   const SizedBox(height: 8.0),
